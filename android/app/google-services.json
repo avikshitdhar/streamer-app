@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "729162115476",
+    "project_id": "video-streamer-76c65",
+    "storage_bucket": "video-streamer-76c65.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729162115476:android:49022fdad7eb3b5e518781",
+        "android_client_info": {
+          "package_name": "com.example.video_streaming_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkvyi5j1_0gnVqwIH9gPJ17_vVp4klfjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

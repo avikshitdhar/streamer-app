@@ -1,0 +1,2 @@
+C:/Users/aviks/OneDrive/Desktop/StudioProjects/video_streaming_app/android/app/.cxx/Debug/2fr66m1m/x86/CMakeFiles/edit_cache.dir
+C:/Users/aviks/OneDrive/Desktop/StudioProjects/video_streaming_app/android/app/.cxx/Debug/2fr66m1m/x86/CMakeFiles/rebuild_cache.dir
