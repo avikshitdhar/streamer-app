@@ -2,6 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:video_streaming_app/providers/user_provider.dart';
+import 'package:video_streaming_app/resources/firestore_methods.dart';
+import 'package:video_streaming_app/widgets/custom_textfield.dart';
 import 'package:video_streaming_app/widgets/loading_indicator.dart';
 
 class Chat extends StatefulWidget {
@@ -13,6 +15,14 @@ class Chat extends StatefulWidget {
 }
 
 class _ChatState extends State<Chat> {
+  final TextEditingController _chatController = TextEditingController();
+
+  @override
+  void dispose() {
+    _chatController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     final userProvider = Provider.of<UserProvider>(context);
@@ -52,6 +62,19 @@ class _ChatState extends State<Chat> {
                 );
               },
             ),
+          ),
+          CustomTextfield(
+            controller: _chatController,
+            onTap: (val) {
+              FirestoreMethods().chat(
+                _chatController.text,
+                widget.channelId,
+                context,
+              );
+              setState(() {
+                _chatController.text = "";
+              });
+            },
           )
         ],
       ),
